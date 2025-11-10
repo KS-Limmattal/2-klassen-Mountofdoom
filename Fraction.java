@@ -30,6 +30,11 @@ public class Fraction {
              this.denominator = denominator;
         }
     }
+    public Fraction(int numerator, int denominator) {
+        this.numerator = numerator;
+        this.setDenominator(denominator);  
+    }
+    
 
     // public void add(Fraction f) {
     //     this.setNumerator(this.numerator * f.denominator + this.denominator * f.numerator);

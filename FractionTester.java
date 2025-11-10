@@ -1,9 +1,8 @@
 public class FractionTester {
     public static void main(String[] args) {
-        Fraction f = new Fraction();
+        Fraction f = new Fraction(0, 3);
         // Der folgende Code funktioniert nur, wenn die Felder von Fraction nicht privat sind:
-        f.setDenominator(9);
-        f.setNumerator(0);
+        
         System.out.println(f.getNumerator() + "/" + f.getDenominator());
         
         // toString():
