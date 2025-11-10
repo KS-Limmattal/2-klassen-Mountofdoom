@@ -1,10 +1,12 @@
 public class Fraction {
     static int numberOfFractions;
     private int numerator, denominator;
+
     @Override
     public String toString() {
         return "Fraction [numerator=" + numerator + ", denominator=" + denominator + "]";
     }
+
     public void setNumerator(int numerator) {
         this.numerator = numerator;
     }
@@ -34,6 +36,10 @@ public class Fraction {
         this.numerator = numerator;
         this.setDenominator(denominator);  
     }
+    public Fraction(Fraction f){
+        this(f.numerator, f.denominator);
+    }
+    
     
 
     // public void add(Fraction f) {
@@ -45,8 +51,8 @@ public class Fraction {
     //     return new Fraction(f.numerator * g.denominator + f.denominator * g.numerator, f.denominator * g.denominator);
     // }
     
-    // public boolean equals(Fraction f) {
-    //     return this.numerator * f.denominator == this.denominator * f.numerator;
-    // }
+     public boolean equals(Fraction f) {
+         return this.numerator * f.denominator == this.denominator * f.numerator;
+     }
 
 }
