@@ -42,14 +42,17 @@ public class Fraction {
     
     
 
-    // public void add(Fraction f) {
-    //     this.setNumerator(this.numerator * f.denominator + this.denominator * f.numerator);
-    //     this.setDenominator(this.denominator * f.denominator);
-    // }
+     public void add(Fraction f) { //
+         this.setNumerator(this.numerator * f.denominator + this.denominator * f.numerator);
+         this.setDenominator(this.denominator * f.denominator);
+     }
+     public void subract(Fraction f) {
+        
+     }
 
-    // public static Fraction add(Fraction f, Fraction g) {
-    //     return new Fraction(f.numerator * g.denominator + f.denominator * g.numerator, f.denominator * g.denominator);
-    // }
+     public static Fraction add(Fraction f, Fraction g) {
+         return new Fraction(f.numerator * g.denominator + f.denominator * g.numerator, f.denominator * g.denominator);
+     }
     
      public boolean equals(Fraction f) {
          return this.numerator * f.denominator == this.denominator * f.numerator;
